@@ -1135,3 +1135,76 @@ html {
         display: none;
     }
 }
+
+@media (max-width: 439px){
+    .logo {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content a {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .hero .head-title {
+        font-size: 1.8rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .logos__scroll-img {
+        max-width: 2.5rem;
+        margin: 0 3rem;
+    }
+
+    .categories {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .categories a {
+        font-size: 1rem;
+    }
+
+    .catalog-categories li a {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    button[type="submit"] {
+        font-size: 12px;
+    }
+
+    .cta-button {
+        padding: 15px;
+    }
+
+    .page h2 {
+        font-size: 1.5rem;
+    }
+
+    .page p {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-item-text a {
+        font-size: 1rem;
+    }
+
+    .bottom-navigation ul li a .icon img {
+        width: 18px;
+        height: 18px;
+    }
+}
