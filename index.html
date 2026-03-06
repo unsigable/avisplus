@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авис Плюс || Всё для лабораторий и медицинских учреждений</title>
+    
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- Favicon (основной) -->
+    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <!-- Apple (iPhone, iPad) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+
+    <!-- Windows tiles -->
+    <meta name="msapplication-TileImage" content="images/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <div class="container">
+            <nav class="glass">
+                <div class="logo" onclick="showPage('home')">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Grid of circles with varying sizes -->
+                            <circle cx="16" cy="16" r="5" fill="#007BFF" opacity="0.9"/>
+                            <circle cx="32" cy="16" r="4" opacity="0.8"/>
+                            <circle cx="16" cy="32" r="4" opacity="0.7"/>
+                            <circle cx="32" cy="32" r="5" fill="#007BFF" opacity="0.85"/>
+                            <!-- Small accent dots -->
+                            <circle cx="24" cy="8" r="2" opacity="1"/>
+                            <circle cx="8" cy="24" r="2" fill="#00FFAA"  opacity="0.9"/>
+                            <circle cx="40" cy="24" r="2" fill="#00FFAA"  opacity="0.9"/>
+                            <circle cx="24" cy="40" r="2" opacity="1"/>
+                            <!-- Tiny corner dots -->
+                            <circle cx="8" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="8" r="1" opacity="0.6"/>
+                            <circle cx="8" cy="40" r="1" opacity="0.6"/>
+                            <circle cx="40" cy="40" r="1" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <span>Авис Плюс</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" onclick="showPage('home')" class="active">Главная</a>
+                    <a href="#" onclick="showPage('about')">О Нас</a>
+                    <a href="#" onclick="showPage('catalog')">Каталог</a>
+                    <a href="#" onclick="showPage('contact')">Контакты</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass">
+                    <div class="hero-image">
+                        <img src="images/home/hero-section.jpg" alt="Modern Technology Interaction" />
+                    </div>
+
+                    <div class="hero-content">
+                        <h1>Медицинские изделия / расходные материалы и оборудование</h1>
+                        <p>Всё для современных лабораторий и медицинских учреждений от проверенных производителей.</p>
+                        <p>Помогаем обеспечивать точную диагностику и эффективную работу.</p>
+                        <a href="#" class="cta-button" onclick="showPage('catalog')">Перейти в каталог >>></a>
+                    </div>
+                </section>
+
+                <section class="categories">
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/shtory-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Антибактериальные шторы</a>
+                    </div>
+
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/oborudovanie-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Медицинское оборудование</a>
+                    </div>
+                    
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/analizatory-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Экспресс-анализаторы</a>
+                    </div>
+
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/rashod-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Расходные материалы</a>
+                    </div>
+                    
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/reaktivy-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Химические реактивы</a>
+                    </div>
+
+                    <div class="category-card glass">
+                        <div class="category-icon"><img src="images/home/icons/recycle-cat.png" alt=""></div>
+                        <a href="#" onclick="showPage('catalog')">Сбор, хранение, утилизация мед. отходов</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="about-content">
+                    <div class="about-text glass">
+                        <h2>О Нас</h2>
+                        <p>Компания специализируется на поставках медицинского и лабораторного оборудования, химических реактивов и расходных материалов для диагностических и исследовательских лабораторий. Мы работаем с надёжными производителями и предлагаем решения, соответствующие современным стандартам качества и точности.</p>
+                        <p>Наша цель — обеспечивать лаборатории всем необходимым для стабильной и эффективной работы. В ассортименте представлены анализаторы, лабораторное оборудование, реактивы и широкий спектр расходных материалов.</p>
+                        <p>Мы уделяем особое внимание качеству продукции, срокам поставки и профессиональному сопровождению клиентов. Благодаря опыту и выстроенной системе логистики мы помогаем медицинским учреждениям и лабораториям своевременно получать необходимые материалы.</p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-card glass">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Лет Опыта</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">Постоянных Клиентов</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Партнёров Производителей</div>
+                        </div>
+                        <div class="stat-card glass">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Поддержка и Консультации</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="partners-section">
+                    <h2>Наши Партнёры</h2>
+                    <!--==================== SCROLLING LOGOS ====================-->
+                    <div class="logos top partner-section">
+                        <div class="logos__container scroll__box">
+                            <div class="scroll ImgBox" style="--time:60s">
+                                <div class="logos__content">
+                                    <img src="images/about/partner1.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner2.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner3.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner4.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner5.png" alt="" class="logos__scroll-img">
+                                </div>
+                                <div class="logos__content">
+                                    <img src="images/about/partner1.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner2.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner3.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner4.png" alt="" class="logos__scroll-img">
+                                    <img src="images/about/partner5.png" alt="" class="logos__scroll-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATALOG PAGE -->
+    <div id="catalog" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="hero glass catalog-bg">
+                    <p class="head-title">Каталог <span>поставляемой</span> продукции</p>
+                    <!-- <p>Всё для современных лаборатории и медицинских учреждений: анализаторы, оборудование, реактивы и расходные материалы от проверенных производителей.</p> -->
+                </section>
+
+                <section class="catalog-grid">
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Медицинские шторы</h3>
+                        </div>
+                        <p>Антибактериальные медицинские шторы с бактериостатическим действием, различных фактур и расцветок.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://tact-shtora.ru/#rec902368081">TACT</a></li>
+                            <li><a href="https://tact-shtora.ru/#rec913084801">TACT ANTISTATIC</a></li>
+                            <li><a href="https://tact-shtora.ru/#rec913110862">TACT ANTISTATIC DEO</a></li>
+                            <li><a href="https://tact-shtora.ru/#rec913122628">TACT DEO</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Экспресс-анализаторы</h3>
+                        </div>
+                        <p>Современные экспресс-анализаторы для быстрой и точной диагностики в лабораториях и медицинских учреждениях.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://www.abrisplus.ru/catalog/covid-19/">COVID-19</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/gormony/">Гормоны</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/infektsii-vich/">Инфекции: ВИЧ</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/infektsii-gepatity/">Инфекции: Гепатиты</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/infektsii-gripp-i-orvi/">Инфекции: Грипп и ОРВИ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Химические реактивы</h3>
+                        </div>
+                        <p>Лабораторные химические реактивы высокого качества для диагностических исследований и научных лабораторий.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://www.abrisplus.ru/catalog/khimicheskie-reaktivy/">Изопропиловый спирт</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/khimicheskie-reaktivy/">Ксилол для цитологических и гистологических исследований</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Медицинское оборудование</h3>
+                        </div>
+                        <p>Надёжное медицинское и лабораторное оборудование для оснащения диагностических центров и медицинских учреждений.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://www.abrisplus.ru/catalog/oborudovanie-dlya-klinicheskoy-biokhimii/">Биохимические анализаторы</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/oborudovanie-dlya-analiza-glyukozy-i-laktata/">Анализаторы глюкозы и лактата</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/analizatory-mochi/">Анализаторы мочи</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/oborudovanie-dlya-gematologii/">Гематологические анализаторы</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/mikrobiologiyaoborudovanie/">Микробиология</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/oborudovanie-dlya-obezvrezhivaniya-otkhodov/">Оборудование для утилизации медотходов</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Лабораторная посуда и принадлежности</h3>
+                        </div>
+                        <p>Широкий ассортимент лабораторных и медицинских расходных материалов для ежедневной работы лабораторий.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://www.abrisplus.ru/catalog/zhurnaly/">Журналы</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/laboratornaya-posuda-i-prinadlezhnosti/">Лабораторная посуда из стекла</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/probirki/">Пробирки</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/konteynery-dlya-perenoski-probirok/">Контейнеры для переноски пробирок</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/konteynery-dlya-sbora-biomaterialov/">Контейнеры для сбора биоматериалов</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="catalog-card glass">
+                        <div class="catalog-header">
+                            <h3>Сбор, хранение, утилизация медотходов</h3>
+                        </div>
+                        <p>Контейнеры, пакеты и системы для безопасного сбора, хранения и утилизации медицинских отходов.</p>
+                        <ul class="catalog-categories">
+                            <li><a href="https://www.abrisplus.ru/catalog/emkosti-konteynery-dlya-utilizatsii-kolyushche-rezhushchikh-otkhodov/">Контейнеры для утилизации колюще-режущих отходов</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/emkosti-konteynery-dlya-sbora-i-dezinfektsii-otkhodov-v-t-ch-organicheskikh/">Контейнеры для сбора и дезинфекции отходов</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/pakety-dlya-sbora-khraneniya-i-utilizatsii-meditsinskikh-otkhodov/">Пакеты для сбора, хранения и утилизации медицинских отходов</a></li>
+                            <li><a href="https://www.abrisplus.ru/catalog/pakety-dlya-avtoklavirovaniya-meditsinskikh-otkhodov/">Пакеты для автоклавирования</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="contact-grid">
+                    <div class="contact-form glass">
+                        <h2>Свяжитесь с нами</h2>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScfLwFnZ_LHecIy2geviedfOlAbhVIcDDiWq542_WzTcxncDA/formResponse" method="POST" target="hidden_iframe">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="entry.1763063807" placeholder="Введите имя">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Ваш email</label>
+                                <input type="email" id="email" name="entry.1458137203" placeholder="Укажите email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Номер телефона</label>
+                                <input type="text" id="phone" name="entry.720653769" placeholder="Укажите контактный номер">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="entry.1648422000" placeholder="Введите сообщение..."></textarea>
+                            </div>
+
+                            <button type="submit" class="cta-button">Отправить сообщение</button>
+                        </form>
+
+                        <iframe name="hidden_iframe" style="display:none;"></iframe>
+                    </div>
+                    
+                    <div class="contact-info glass">
+                        <h2>Контактные данные</h2>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><img src="images/contacts/icons/whatsapp.png" alt=""></div>
+                            <div class="contact-item-text">
+                                <h4>WhatsApp:</h4>
+                                <a href="https://wa.me/996556447445" target="_blank">+996 556 447 445</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><img src="images/contacts/icons/email.webp" alt=""></div>
+                            <div class="contact-item-text">
+                                <h4>Email:</h4>
+                                <a href="mailto:avispluss@list.ru">avispluss@list.ru</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><img src="images/contacts/icons/phone.png" alt=""></div>
+                            <div class="contact-item-text">
+                                <h4>Телефоны:</h4>
+                                <a href="tel:+996556447445" class="phone-mobile">+996 556 447 445</a>
+                                <a href="tel:+996700388181" class="phone-mobile">+996 700 388 181</a>
+                                <p class="phone-desktop">+996 556 447 445</p>
+                                <p class="phone-desktop">+996 700 388 181</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><img src="images/contacts/icons/clock.png" alt=""></div>
+                            <div class="contact-item-text">
+                                <h4>Рабочее время:</h4>
+                                <p>Пн-Пт: 09:00-18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item-icon"><img src="images/contacts/icons/gps-location.png" alt=""></div>
+                            <div class="contact-item-text">
+                                <h4>Адрес:</h4>
+                                <a href="https://maps.app.goo.gl/zHFQnvUwc8YAQt9d8" target="_blank">г. Бишкек, ул. Жакшылык 8</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MAP -->
+                <section class="contact-map-section">
+                    <div class="contact-map glass">
+                        <h2>Мы на Карте</h2>
+                        <div class="map-container">
+                            <iframe
+                                class="map-embed"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d731.2453735942944!2d74.50864061521416!3d42.85212392126877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skg!4v1772726026965!5m2!1sru!2skg"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                            <div class="map-placeholder">
+                                <div class="map-placeholder-icon">🗺️</div>
+                                <p><strong>ОсОО "Авис Плюс"</strong></p>
+                                <p>ул. Жакшылык 8</p>
+                                <p>г. Бишкек, ж/м "Ак-Ордо"</p>
+                                <p style="margin-top: 15px; font-size: 12px; opacity: 0.7;">
+                                    Map integration can be added with<br>
+                                    Google Maps, Yandex Map, or 2Gis
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glass">
+                <div class="footer-content">
+                    <div class="footer-links">
+                        <a href="#" onclick="showPage('about')">О Компании</a>
+                        <a href="#" onclick="showPage('catalog')">Каталог</a>
+                        <a href="#" onclick="showPage('contact')">Контакты</a>
+                        <a href="https://wa.me/996556447445" target="_blank">WhatsApp</a>
+                        <!-- <a href="https://telegram.me/+996556447445" target="_blank">Telegram</a> -->
+                        <p class="phone-mobile">Позвонить:</p>
+                        <a href="tel:+996556447445" class="phone-mobile">+996 556 447 445</a>
+                        <a href="tel:+996700388181" class="phone-mobile">+996 700 388 181</a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2026 ОсОО "Авис Плюс". Все права защищены.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bottom navigation menu -->
+    <div class="bottom-navigation">
+        <ul>
+            <li class="list">
+                <a href="#" onclick="showPage('home')" class="active">
+                    <span class="icon">
+                        <img src="images/home-icon.png" alt="">
+                    </span>
+                    <span class="text">Главная</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" onclick="showPage('about')">
+                    <span class="icon">
+                        <img src="images/about-icon.png" alt="">
+                    </span>
+                    <span class="text">О нас</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" onclick="showPage('catalog')">
+                    <span class="icon">
+                        <img src="images/catalog-icon.png" alt="">
+                    </span>
+                    <span class="text">Каталог</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#" onclick="showPage('contact')">
+                    <span class="icon">
+                        <img src="images/phone-icon.png" alt="">
+                    </span>
+                    <span class="text">Контакты</span>
+                </a>
+            </li>
+
+            <!-- <div class="indicator"></div> -->
+        </ul>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
