@@ -16,6 +16,17 @@ let currentPage = 'home';
                     link.classList.add('active');
                 }
             });
+
+            // update bottom navigation
+            document.querySelectorAll('.bottom-navigation .list').forEach(item => {
+                item.classList.remove('active');
+
+                const link = item.querySelector('a');
+
+                if(link && link.getAttribute('onclick') === `showPage('${pageId}')`) {
+                    item.classList.add('active');
+                }
+            });
             
             currentPage = pageId;
             
