@@ -1203,8 +1203,13 @@ html {
         font-size: 1rem;
     }
 
+	.map-embed {
+        display: none;
+    }
+
     .bottom-navigation ul li a .icon img {
         width: 18px;
         height: 18px;
     }
 }
+
