@@ -1203,7 +1203,7 @@ html {
         font-size: 1rem;
     }
 
-	.bottom-navigation ul li a .icon img {
+    .bottom-navigation ul li a .icon img {
         width: 18px;
         height: 18px;
     }
@@ -1214,4 +1214,3 @@ html {
         display: none;
     }
 }
-
