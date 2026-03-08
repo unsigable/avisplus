@@ -124,6 +124,9 @@
     min-height: 350px;
     user-select: none;
     padding: 35px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .fullcards-card-wrapper .card-bg {
@@ -222,3 +225,4 @@
     }
 
 }
+
