@@ -1,0 +1,223 @@
+/* ==============================
+   Home TOP Swiper Slider
+   ============================== */
+.smallcards-slider {
+    margin-bottom: 40px;
+}
+
+.smallcards-slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+
+.smallcards-card-list .smallcards-card-item {
+    color: #fff;
+    /*width: 400px;*/
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.smallcards-card-list .smallcards-card-item .card-image {
+    width: 200px;
+    padding: 4px;
+}
+
+.smallcards-card-list .smallcards-card-item .product-name {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.smallcards-card-list .smallcards-card-item .product-description {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.7);;
+    font-weight: 500;
+    margin: 30px 0;    
+}
+
+.smallcards-card-list .smallcards-card-item .product-description:hover {
+    color: rgba(255, 255, 255, 1);   
+}
+
+.smallcards-card-list .smallcards-card-item .order-button {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 35px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    transition: 0.2s ease;
+}
+
+.smallcards-card-list .smallcards-card-item .order-button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.smallcards-slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.smallcards-slider-wrapper .swiper-slide-button {
+    color: #fff;
+    opacity: 0.5;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+.smallcards-slider-wrapper .swiper-slide-button:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .smallcards-slider-wrapper {
+        margin: 0 10px 40px;
+    }
+
+    .smallcards-slider-wrapper .swiper-slide-button {
+        display: none;
+    }
+}
+
+/* ==============================
+   Home BOTTOM Swiper Slider
+   ============================== */
+.fullcards-slider {
+    padding-top: 40px;
+}
+
+.fullcards-slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    /*margin: 0 70px 55px;*/
+}
+
+.fullcards-card-list .fullcards-card-item {
+    color: #fff;
+    /*width: 400px;*/
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fullcards-card-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 350px;
+    user-select: none;
+    padding: 35px;
+}
+
+.fullcards-card-wrapper .card-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.fullcards-card-wrapper > *:not(.card-bg) {
+    position: relative;
+    z-index: 2;
+}
+
+.fullcards-card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.65) 0%,
+        rgba(0,0,0,0.55) 30%,
+        rgba(0,0,0,0) 60%
+    );
+}
+
+.fullcards-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.fullcards-card-list .fullcards-card-item .card-image {
+    width: 150px;
+    height: 150px;
+    /*border-radius: 50%;*/
+    margin-bottom: 20px;
+    /*border: 3px solid #fff;*/
+    padding: 4px;
+}
+
+.fullslider-card-description {
+    padding-right: 50%;
+    margin: 30px 0;
+}
+
+.fullcards-content-buttons {
+    margin-top: 20px;
+
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;  
+}
+
+.fullcards-card-item .fullcards-content-buttons .order-button,
+.fullcards-card-item .fullcards-content-buttons .product-description {
+    max-width: 300px;
+    font-size: 1rem;
+    margin: 0 15px 0 0;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    transition: 0.2s ease;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.fullcards-card-item .fullcards-content-buttons .order-button:hover,
+.fullcards-card-item .fullcards-content-buttons .product-description:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .fullcards-slider-wrapper {
+        margin: 0 10px 20px;
+    }
+}
