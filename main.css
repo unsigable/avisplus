@@ -133,7 +133,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 45px;
+    padding: 15px 35px;
 }
 .logo {
     font-size: 32px;
@@ -206,10 +206,10 @@ nav {
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
-    padding: 60px 40px;
-    margin-bottom: 40px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
 }
 .hero-image {
     display: flex;
@@ -900,7 +900,7 @@ html {
     nav {
         flex-direction: column;
         gap: 20px;
-        padding: 20px 10px;
+        padding: 10px;
     }
     .nav-links {
         gap: 15px;
