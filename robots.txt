@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://unsigable.github.io/avisplus/sitemap.xml

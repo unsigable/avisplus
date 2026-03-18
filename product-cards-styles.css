@@ -1,0 +1,227 @@
+.category-cards .card h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.category-description {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    padding: 15px;
+}
+
+.category-description p {
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* =============== PRODUCT CARDS =============== */
+.product-card {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 20px;
+    /*margin-bottom: 30px;*/
+}
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image img {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.product-card-image img.small {
+    width: 60%;
+    max-width: 300px;
+}
+.product-card-content.product-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card h1 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.product-card p#selectedProduct {
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.description p.warning {
+    color: red;
+    font-weight: 600;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.cta-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+button[type="submit"] {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.order-btns {
+    margin-right: 20px;
+}
+
+/* Кнопки */
+/*.order-buttons {
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+.order-btn {
+    background:#2c7be5;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.whatsapp-btn {
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+}*/
+
+/* Popup */
+.modal {
+    display:none;
+    position:fixed;
+    z-index:1000;
+    left:0; 
+    top:0;
+    width:100%; 
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+.modal-content {
+    /*background:#fff;*/
+    padding:20px;
+    width:90%;
+    max-width:500px;
+    margin:20px auto;
+    /*border-radius:10px;*/
+    position:relative;
+}
+.modal-content h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+.modal-close {
+    color: #fff;
+    position:absolute;
+    right:15px;
+    top:10px;
+    font-size:28px;
+    cursor:pointer;
+}
+.form-group {
+    margin-bottom:15px;
+}
+.form-group input,
+.form-group textarea {
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.form-success {
+    display:none;
+    margin-top:20px;
+    padding:15px;
+    background:#e8f8ee;
+    border:1px solid #b7e4c7;
+    color:#2d6a4f;
+    border-radius:6px;
+    font-weight:500;
+}
+
+@media (max-width: 768px) {
+    /* Adjust padding for mobile */
+    .product-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+    .product-card-content {
+        text-align: center;
+    }
+    .product-card h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 439px){
+    .product-card {
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-card-image img {
+        max-width: 300px;
+        width: 80%;
+    }
+
+    .product-card-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .product-card-content a {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        margin: 10px 10px 0 0;
+    }
+
+    .product-card p {
+        font-size: 0.8rem;
+    }
+}
+

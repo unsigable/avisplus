@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.accordion {
+	width: 100%;
+	margin: 0 15px;
+	padding: 15px;
+}
+
+.accordion .accrodion-content {
+	margin: 10px 0;
+	overflow: hidden;
+	/*background: #fff;*/
+	border-radius: 8px;
+}
+
+.accrodion-content .acc-header {
+	display: flex;
+	min-height: 50px;
+	padding: 0 15px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: space-between;
+	transform: all 0.2s linear;
+}
+
+.accrodion-content .acc-header .title {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #fff;
+}
+
+.accrodion-content .acc-header #sign {
+	font-size: 1.25rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+.accrodion-content.open .acc-header .title,
+.accrodion-content.open .acc-header #sign {
+	color: #333;
+}
+
+.accrodion-content .acc-header .minus {
+	display: none;
+}
+
+.accrodion-content.open {
+	padding-bottom: 15px;
+}
+
+.accrodion-content.open .acc-header .minus {
+	display: block;
+}
+
+.accrodion-content.open .acc-header {
+	min-height: 35px;
+}
+
+.accrodion-content.open .acc-header .plus {
+	display: none;
+}
+
+.accrodion-content .description {
+	height: 0;
+	font-size: 0.9rem;
+	color: #333;
+	font-weight: 400;
+	padding: 0 15px;
+	transition: all 0.2s linear;
+}
+
+.description ul {
+    margin-left: 15px;
+}
+
+.description ol {
+    margin-left: 15px;
+}
+
+.accrodion-content.open {
+	background: #fff;
+	overflow: auto;
+	text-align: left;
+}
+
+.accrodion-content hr {
+	opacity: 0;
+}
+
+.accrodion-content.open hr {
+	opacity: 1;
+}
