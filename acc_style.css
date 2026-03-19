@@ -73,6 +73,19 @@
 	transition: all 0.2s linear;
 }
 
+.description-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 25px;
+}
+
+.accrodion-content .description img {
+    width: 60%;
+    max-width: 300px;
+}
+
 .description ul {
     margin-left: 15px;
 }
